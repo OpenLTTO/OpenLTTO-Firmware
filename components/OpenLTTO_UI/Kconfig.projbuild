@@ -1,0 +1,39 @@
+menu "OpenLTTO UI Configuration"
+
+    config OPENLTTO_UI_EVENT_TASK_HEAP
+        int "OpenLTTO OpenLTTO UI Task Heap Memory Allocation (kb)"
+        default 4
+        range 0 128
+        help
+            KB of Heap RAM to allocate for the Task
+
+    config OPENLTTO_UI_EVENT_TASK_PRIORITY
+        int "OpenLTTO OpenLTTO UI Task Priority"
+        default 3
+        range 0 16
+        help
+            Task Priority for the Task
+
+     config OPENLTTO_UI_EVENT_QUEUE_DEPTH
+        int "OpenLTTO OpenLTTO UI Event Queue Depth"
+        default 5
+        range 0 256
+        help
+            Queue Depth for the Event Loop
+
+     config OPENLTTO_UI_EVENT_EMITTER_BLOCK_DURATION
+        int "OpenLTTO OpenLTTO UI Event Emitter Blocking time in ms"
+        default 100
+        range 0 1000
+        help
+            ms to block event emitter on full event queue
+
+    config OPENLTTO_UI_DISPLAY_BRIGHTNESS_LEDC_CH
+        int "LEDC channel index"
+        default 1
+        range 0 7
+        help
+            LEDC channel is used to generate PWM signal that controls display brightness.
+            Set LEDC index that should be used.
+
+endmenu
