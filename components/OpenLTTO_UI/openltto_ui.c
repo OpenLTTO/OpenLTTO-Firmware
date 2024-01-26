@@ -20,7 +20,6 @@ void openltto_ui_driver_init()
     driver_initialized = true;
 }
 
-
 void openltto_ui_init()
 {
     if(!driver_initialized){
@@ -54,22 +53,10 @@ void openltto_ui_init_event_loop()
         ESP_LOGE(TAG, "Failed to create UI event loop! [%s]",esp_err_to_name(rv));
     }
 
-    rv = esp_event_handler_register_with(loop_handle, OPENLTTO_UI_EVENT_BASE, ESP_EVENT_ANY_ID, openltto_ui_event_handler, NULL);
     if(rv!=ESP_OK){
         ESP_LOGE(TAG, "Failed to register UI event handler! [%s]",esp_err_to_name(rv));
     }
 
-}
-
-void openltto_ui_event_handler(void* handler_arg, esp_event_base_t base, int32_t id, void * event_data)
-{
-    switch(id){
-        case OPENLTTO_UI_EVENT_RESET_CONFIRMED:
-            ESP_LOGI(TAG,"UI Reset Requested!");
-            vTaskDelay(3000/portTICK_PERIOD_MS);    //Delay for user readability
-            openltto_wifi_reset_config();
-            break;
-    }
 }
 
 void openltto_ui_event_emitter(openlttoUIEvent_t event)

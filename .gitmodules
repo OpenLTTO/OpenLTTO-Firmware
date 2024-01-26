@@ -1,0 +1,6 @@
+[submodule "components/arduino-esp32"]
+	path = components/arduino-esp32
+	url = https://github.com/espressif/arduino-esp32.git
+[submodule "components/esp32_IR_Ltto"]
+	path = components/esp32_IR_Ltto
+	url = git@github.com:OpenLTTO/esp32_IR_Ltto.git
