@@ -1,0 +1,37 @@
+menu "OpenLTTO Hardware Config"
+    menu "I2C Bus"
+
+        config OPENLTTO_HW_I2C_NUM
+            int "I2C peripheral index"
+            default 1
+            range 0 1
+            help
+                ESP32S3 has two I2C peripherals, pick the one you want to use.
+
+         config OPENLTTO_HW_I2C_SDA_IO
+            int "I2C GPIO Pin for SDA"
+            default 12
+            range 0 100
+            help
+                GPIO Pin for I2C SDA Signalling
+
+        config OPENLTTO_HW_I2C_SCL_IO
+            int "I2C GPIO Pin for SCL"
+            default 11
+            range 0 100
+            help
+                GPIO Pin for I2C SCL Signalling
+
+        config OPENLTTO_HW_I2C_FAST_MODE
+            bool "Enable I2C fast mode"
+            default y
+            help
+                I2C has two speed modes: normal (100kHz) and fast (400kHz).
+
+        config OPENLTTO_HW_I2C_CLK_SPEED_HZ
+            int
+            default 400000 if OPENLTTO_HW_I2C_FAST_MODE
+            default 100000
+
+    endmenu
+endmenu

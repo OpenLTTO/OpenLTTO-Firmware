@@ -1,0 +1,61 @@
+#ifndef LIB_AXP2101_H
+#define LIB_AXP2101_H
+
+#define AXP2101_REG_PMU_STATUS1             0x00
+#define AXP2101_REG_PMU_STATUS2             0x01
+#define AXP2101_REG_PMU_CHIP_ID             0x03
+#define AXP2101_REG_DATA_BUF                0x04
+#define AXP2101_REG_PMU_CONFIG              0x10
+#define AXP2101_REG_BATFET_CONTROL          0x12
+#define AXP2101_REG_DIE_TEMP_CONTROL        0x13
+#define AXP2101_REG_MIN_SYS_V_CTL           0x14
+#define AXP2101_REG_INPUT_V_LIMIT           0x15
+#define AXP2101_REG_INPUT_C_LIMIT           0x16
+#define AXP2101_REG_RESET_FUELGAUGE         0x17
+#define AXP2101_REG_CHARGET_FUELGAUGE_CTL   0x18
+#define AXP2101_REG_WATCHDOG_CTL            0x19
+#define AXP2101_REG_LOW_BAT_THRES           0x1A
+#define AXP2101_REG_PWRON_STATUS            0x20
+#define AXP2101_REG_PWROFF_STATUS           0x21
+#define AXP2101_REG_PWROFF_EN               0x22
+#define AXP2101_REG_PWROFF_DCDC             0x23
+#define AXP2101_REG_VSYS_V_PWROFF_THRES     0x24
+#define AXP2101_REG_PWROK_PWROFF_SEQ        0x25
+#define AXP2101_REG_SLEEP_WAKE_CTL          0x26
+#define AXP2101_REG_IRQ_OFF_ON_LVL          0x27
+#define AXP2101_REG_FAST_PWRON_SET1         0x28
+#define AXP2101_REG_FAST_PWRON_SET2         0x29
+#define AXP2101_REG_FAST_PWRON_SET3         0x2A
+#define AXP2101_REG_FAST_PWRON_SET4_CTL     0x2B
+#define AXP2101_REG_ADC_CHAN_CTL            0x30
+#define AXP2101_REG_ADC_DATA                0x34
+#define AXP2101_REG_IRQ_EN                  0x40
+#define AXP2101_REG_IRQ_STATUS              0x48
+#define AXP2101_REG_TS_GPADC_CTL            0x50
+#define AXP2101_REG_TS_GPADC_H_SET          0x52
+#define AXP2101_REG_TS_GPADC_L_SET          0x53
+#define AXP2101_REG_VLTF_CHG_SET            0x54
+#define AXP2101_REG_VHTF_CHG_SET            0x55
+#define AXP2101_REG_VLTF_WORK_SET           0x56
+#define AXP2101_REG_VHTF_WORK_SET           0x57
+#define AXP2101_REG_JIETA_EN                0x58
+#define AXP2101_REG_JIETA_SET               0x59
+#define AXP2101_REG_IPRECHG_SET             0x61
+#define AXP2101_REG_ICC_CHG_SET             0x62
+#define AXP2101_REG_ITERM_CHG_SET_CTL       0x63
+#define AXP2101_REG_CV_CHG_V_SET            0x64
+#define AXP2101_REG_THERMAL_REG_SET         0x65
+#define AXP2101_REG_CHG_TIMEOUT_SET_CTL     0x67
+#define AXP2101_REG_BAT_DETECT_CTL          0x68
+#define AXP2101_REG_CHGLED_SET_CTL          0x69
+#define AXP2101_REG_BTN_BAT_CHG_V_SET       0x6A
+#define AXP2101_REG_DCDCS_ONOFF_DVM_CTL     0x80
+#define AXP2101_REG_DCDCS_FORCE_PWM_CTL     0x81
+#define AXP2101_REG_DCDCS_V_SET             0x82
+#define AXP2101_REG_LDOS_ON_OFF_CTL         0x90
+#define AXP2101_REG_LDOS_V_SET              0x92
+#define AXP2101_REG_BAT_PARAM               0xA1
+#define AXP2101_REG_FUEL_GAUGE_CTL          0xA2
+#define AXP2101_REG_BAT_PERCENT             0xA4
+
+#endif

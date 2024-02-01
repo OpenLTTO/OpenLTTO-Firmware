@@ -1,5 +1,5 @@
-#ifndef OPENLTTO_HOST_PRIVATE_H_
-#define OPENLTTO_HOST_PRIVATE_H_
+#ifndef OPENLTTO_HARDWARE_PRIVATE_H_
+#define OPENLTTO_HARDWARE_PRIVATE_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -13,8 +13,11 @@ extern "C" {
 #include "freertos/task.h"
 #include "esp_system.h"
 #include "esp_log.h"
+#include "driver/gpio.h"
+#include "driver/i2c.h"
+#include "axp2101.h"
 
-#include "OpenLTTO_Host.h"
+#include "OpenLTTO_Hardware.h"
 
 #include "sdkconfig.h"
 

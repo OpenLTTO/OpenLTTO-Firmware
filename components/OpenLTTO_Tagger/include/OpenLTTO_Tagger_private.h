@@ -16,6 +16,8 @@ extern "C" {
 
 #include "OpenLTTO_Tagger.h"
 
+#include "sdkconfig.h"
+
 #ifdef __cplusplus
 }
 #endif
