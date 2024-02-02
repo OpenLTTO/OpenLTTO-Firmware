@@ -8,6 +8,17 @@ The OpenLTTO Project is an attempt to recreate the Lazer Tag Team Ops protocol, 
 
 We intend to do this via a collection of open-source hardware components that can act as building blocks, to build anything you might require for a Lazer Tag game (Taggers, Hosting Pods, Zone controllers, utilities, etc). And an opensource firmware to operate it all. 
 
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
 # OpenLTTO Firmware
 
 This Firmware Project is still a Work In Progress! It is not fully functional yet. 
